@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ギター一覧</title>
+</head>
+<body>
+  <h2>ギター一覧</h2>
+  <table border="1">
+    <tr><th>ID</th><th>メーカー</th><th>モデル</th></tr>
+    <% for( let row of data ) { %>
+      <tr>
+        <td><%= row.id %></td>
+        <td><%= row.maker %></td>
+        <td><%= row.model %></td>
+      </tr>
+    <% } %>
+  </table>
+  <p><a href="/public/guitar_add.html">ギターを追加する</a></p>
+</body>
+</html>
