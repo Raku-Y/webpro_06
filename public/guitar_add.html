@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ギターを追加する</title>
+</head>
+<body>
+  <h2>ギターを追加する</h2>
+  <form action="/guitar_add">
+    <label for="id">ID</label>
+    <input type="number" name="id" id="id" required><br>
+    <label for="maker">メーカー</label>
+    <input type="text" name="maker" id="maker" required><br>
+    <label for="model">モデル</label>
+    <input type="text" name="model" id="model" required><br>
+    <input type="submit" value="登録">
+  </form>
+  <p><a href="/guitar">一覧を見る</a></p>
+</body>
+</html>

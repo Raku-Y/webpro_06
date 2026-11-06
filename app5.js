@@ -37,6 +37,15 @@ app.get("/guitar", (req, res) => {
   res.render('guitar', { data: guitar });
 });
 
+app.get("/guitar_add", (req, res) => {
+  let id = req.query.id;
+  let maker = req.query.maker;
+  let model = req.query.model;
+  let newdata = { id: id, maker: maker, model: model };
+  guitar.push( newdata );
+  res.redirect('/public/guitar_add.html');
+});
+
 app.get("/hello1", (req, res) => {
   const message1 = "Hello world";
   const message2 = "Bon jour";
